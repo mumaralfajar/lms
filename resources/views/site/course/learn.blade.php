@@ -49,7 +49,7 @@
                             </div>
                         </div>
 
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6  col-6">
+                        <!-- <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6  col-6">
                             <div class="cv-category-detail cv-rating float-lg-left float-md-right float-sm-right">
                                 <span>{{ $course->ratings->count('rating') }} Reviews</span>
                                 <br>
@@ -59,9 +59,9 @@
                                     @endfor
                                 </star>
                             </div>
-                        </div>
+                        </div> -->
 
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+                        <!-- <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                             <div class="cv-category-detail cv-price">
                             	@php $course_price = $course->price ? $course->price : '0.00'; @endphp
                                 <h4>{{  config('config.default_currency').$course_price }}</h4>
@@ -71,7 +71,7 @@
                             <div class="cv-category-detail cv-enroll float-lg-right float-md-right float-sm-right">
                                 <a href="javascript::void(0);" class="btn btn-ulearn-cview mt-1" data-toggle="modal" data-target="#rateModal">RATE COURSE</a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
                     
@@ -175,17 +175,17 @@
                         <h6>COURSE FEATURES</h6>
                     </header>
 
-                    <div class="cf-pricing">
+                    <!-- <div class="cf-pricing">
                         <span>PRICING:</span>
                         <button class="cf-pricing-btn btn">{{ $course->price == '' || $course_price == 0.00 ? 'FREE' : 'PAID' }}</button>
-                    </div>
+                    </div> -->
 
                     <ul class="list-unstyled cf-pricing-li">
                         <li><i class="far fa-user"></i>{{ $students_count }} Student(s)</li>
                         <li><i class="far fa-clock"></i>Duration: {{ $course->duration ? $course->duration : '-' }}</li>
                         <li><i class="fas fa-bullhorn"></i>Lectures: {{ $lectures_count }}</li>
                         <li><i class="far fa-play-circle"></i>Videos: {{ $videos_count }}</li>
-                        <li><i class="far fa-address-card"></i>Certificate of Completion</li>
+                        <!-- <li><i class="far fa-address-card"></i>Certificate of Completion</li> -->
                         <li><i class="fas fa-file-download"></i>Downloadable Resources</li>
                     </ul>
                 </section>
