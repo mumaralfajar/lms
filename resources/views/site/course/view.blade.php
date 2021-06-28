@@ -48,7 +48,7 @@
                             </div>
                         </div>
 
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6  col-6">
+                        <!-- <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6  col-6">
                             <div class="cv-category-detail cv-rating float-lg-left float-md-right float-sm-right">
                                 <span>{{ $course->ratings->count('rating') }} Reviews</span>
                                 <br>
@@ -58,14 +58,14 @@
                                     @endfor
                                 </star>
                             </div>
-                        </div>
+                        </div> -->
 
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+                        <!-- <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                             <div class="cv-category-detail cv-price">
                             	@php $course_price = $course->price ? $course->price : '0.00'; @endphp
                                 <h4>{{  config('config.default_currency').$course_price }}</h4>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="col-xl-3 col-lg-3 col-md-6 float-md-right col-sm-6 float-sm-right col-6">
                             <div class="cv-category-detail cv-enroll float-lg-right float-md-right float-sm-right">
                                 <a href="{{ route('course.checkout', $course->course_slug) }}" class="btn btn-ulearn-cview mt-1">ENROLL COURSE</a>
@@ -204,10 +204,10 @@
                         <h6>COURSE FEATURES</h6>
                     </header>
 
-                    <div class="cf-pricing">
+                    <!-- <div class="cf-pricing">
                         <span>PRICING:</span>
                         <button class="cf-pricing-btn btn">{{ $course->price ? 'PAID' : 'FREE' }}</button>
-                    </div>
+                    </div> -->
 
                     <ul class="list-unstyled cf-pricing-li">
                         <li><i class="far fa-user"></i>199 Students</li>

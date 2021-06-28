@@ -30,6 +30,10 @@ class InstructionLevelTableSeeder extends Seeder
             $instruction_levels = new InstructionLevel();
             $instruction_levels->level = 'Comprehensive';
             $instruction_levels->save();
+
+            $instruction_levels = new InstructionLevel();
+            $instruction_levels->level = 'Coba';
+            $instruction_levels->save();
         }
     }
 }

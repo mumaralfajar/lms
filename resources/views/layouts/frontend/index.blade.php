@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>ULEARN LMS</title>
+        <title>LMS</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="robots" content="all,follow">
@@ -44,12 +44,12 @@
                   </div>
                 </div>
             </div>
-
-            <div class="col-sm-5 col-md-3 col-lg-2 col-xl-2 d-none d-sm-block">
+            
+            <!-- <div class="col-sm-5 col-md-3 col-lg-2 col-xl-2 d-none d-sm-block">
                 @if(Auth::check() && !Auth::user()->hasRole('instructor') && !Auth::user()->hasRole('admin'))
                 <span class="become-instructor" href="{{ route('login') }}" data-toggle="modal" data-target="#myModal">Become Instructor</span>
                 @endif
-            </div>
+            </div> -->
 
             <div class="col-6 col-sm-3 col-md-3 col-lg-2 col-xl-2">
                 @guest
@@ -133,7 +133,7 @@
                 <img src="{{ asset('frontend/img/logo_footer.png') }}" class="img-fluid" width="210" height="48">
                 <br>
                 <span id="c-copyright">
-                    Copyright © 2019, Ulearn. All rights reserved.
+                    Copyright © 2021, LMS. All rights reserved.
                 </span>
             </div>
         </div>

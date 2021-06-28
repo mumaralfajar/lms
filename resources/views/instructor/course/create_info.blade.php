@@ -66,11 +66,11 @@
             @endif
         </div>
 
-        <div class="form-group col-md-4">
+        <!-- <div class="form-group col-md-4">
             <label class="form-control-label">Duration</label>
             <input type="text" class="form-control" name="duration" 
                 placeholder="Course Duration" value="{{ $course->duration }}" />
-        </div>
+        </div> -->
 
         <div class="form-group col-md-8">
             <label class="form-control-label">Keywords</label>
@@ -78,17 +78,17 @@
                 placeholder="Keywords" value="{{ $course->keywords }}" />
         </div>
 
-        <div class="form-group col-md-4">
+        <!-- <div class="form-group col-md-4">
             <label class="form-control-label">Price <i class="fa fa-info-circle" data-toggle="tooltip" data-original-title="Leave blank if the course is free"></i></label>
             <input type="number" class="form-control" name="price" 
                 placeholder="Course Price" value="{{ $course->price }}" />
-        </div>
+        </div> -->
 
-        <div class="form-group col-md-4">
+        <!-- <div class="form-group col-md-4">
             <label class="form-control-label">Strike Out Price <i class="fa fa-info-circle" data-toggle="tooltip" data-original-title="Applied only for paid courses"></i></label>
             <input type="text" class="form-control" name="strike_out_price" 
                 placeholder="Strike Out Price" value="{{ $course->strike_out_price }}" />
-        </div>
+        </div> -->
 
         <div class="form-group col-md-4">
             <label class="form-control-label">Status</label>

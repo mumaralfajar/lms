@@ -51,13 +51,13 @@
                                 <button type="submit" class="btn btn-lg btn-block login-page-button">Login</button>
                             </div>
 
-                            <div class="hr-container">
+                            <!-- <div class="hr-container">
                                <hr class="hr-inline" align="left">
                                <span class="hr-text"> or </span>
                                <hr class="hr-inline" align="right">
-                            </div>
+                            </div> -->
 
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <a href="{{ url('login/facebook') }}" class="btn btn-lg btn-block social-btn facebook-btn">
                                     <div class="row">
                                         <div class="col-3">
@@ -85,10 +85,10 @@
                                         </div>
                                     </div>
                                 </a>
-                            </div>
+                            </div> -->
 
                         </div>
-                        </form>
+                    </form>
                     </div>
                 </div>
             </div>
