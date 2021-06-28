@@ -5,7 +5,7 @@
         <!-- banner start -->
         <div class="subpage-slide-blue">
             <div class="container">
-                <h1>Checkout</h1>
+                <h1>Confirmation</h1>
             </div>
         </div>
         <!-- banner end -->
@@ -17,7 +17,7 @@
                     <li class="breadcrumb-item"><a href="index.php">Home</a></li>
                     <li class="breadcrumb-item"><a href="@if($course_breadcrumb) {{ $course_breadcrumb }} @else {{ route('course.list') }} @endif">Course List</a></li>
                     <li class="breadcrumb-item"><a href="{{ route('course.view', $course->course_slug) }}">Course</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+                    <li class="breadcrumb-item active" aria-current="page">Confirmation</li>
                   </ol>
                 </div>
             </div>
@@ -28,7 +28,7 @@
         <article class="container mt-4">
             <div class="row">
                <div class="col-xl-7 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-                    <h6 class="underline-heading mb-4">Confirm Purchase</h6>
+                    <h6 class="underline-heading mb-4">Confirmation</h6>
                     
                     
                     <div class="row mb-1">
@@ -49,8 +49,7 @@
                                     <span>Created by <b>{{ $course->instructor->first_name.' '.$course->instructor->last_name }}</b></span>
                                 </div>
                             </div>
-                            @php $course_price = $course->price == 0.00 ? 'Free' : config('config.default_currency').$course->price; @endphp
-                            <h6 class="c-price-checkout">{{  $course_price }}&nbsp;<s>{{ $course->strike_out_price ? $course->strike_out_price : '' }}</s></h6>
+                            
                         </div>
 
                     </div>
@@ -67,12 +66,12 @@
                         <button type="submit" class="btn btn-lg btn-block social-btn facebook-btn">
                             <div class="row">
                                 <div class="col-3">
-                                    <i class="@if($course->price == 0.00) fas fa-cart-arrow-down @else fab fa-paypal  @endif float-right"></i>
+                                    <i class="@if($course->price == 0.00) fas @else fab fa-paypal  @endif float-right"></i>
                                 </div>
-                                <div class="col-9">
+                                <div class="col-14">
                                     <span>
                                     @if($course->price == 0.00)
-                                    Subscribe to the course
+                                    Confirm
                                     @else
                                     Pay with Paypal Account
                                     @endif
