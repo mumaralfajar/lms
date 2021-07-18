@@ -24,7 +24,7 @@
       <div class="row">
       
         <div class="form-group col-md-4">
-            <label class="form-control-label">Course Title <span class="required">*</span></label>
+            <label class="form-control-label">Nama Mata Pelajaran<span class="required">*</span></label>
             <input type="text" class="form-control" name="course_title" 
                 placeholder="Course Title" value="{{ $course->course_title }}" />
                 @if ($errors->has('course_title'))
@@ -33,7 +33,7 @@
         </div>
 
         <div class="form-group col-md-4">
-            <label class="form-control-label">Category <span class="required">*</span></label>
+            <label class="form-control-label">Jenjang<span class="required">*</span></label>
             <select class="form-control" name="category_id">
                 <option value="">Select</option>
                 @foreach($categories as $category)
@@ -50,7 +50,7 @@
         </div>
 
         <div class="form-group col-md-4">
-            <label class="form-control-label">Instruction Level <span class="required">*</span></label>
+            <label class="form-control-label">Kelas<span class="required">*</span></label>
             <select class="form-control" name="instruction_level_id">
                 <option value="">Select</option>
                 @foreach($instruction_levels as $instruction_level)

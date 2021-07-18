@@ -130,7 +130,7 @@ figure figcaption {
                 @endif
         </div>
 
-        <div class="form-group col-md-6">
+        <!-- <div class="form-group col-md-6">
             <label class="form-control-label">Facebook Link </label>
             <input type="text" class="form-control" name="link_facebook" 
                 placeholder="Facebook Link" value="{{ $instructor->link_facebook }}" />
@@ -164,7 +164,7 @@ figure figcaption {
                 @if ($errors->has('link_googleplus'))
                     <label class="error" for="link_googleplus">{{ $errors->first('link_googleplus') }}</label>
                 @endif
-        </div>
+        </div> -->
 
         </div>
 

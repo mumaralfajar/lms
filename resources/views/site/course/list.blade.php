@@ -67,7 +67,7 @@
                     @if($_GET)
                     <a href="{{ route('course.list') }}" class="clear-filters"><i class="fa fa-sync"></i>&nbsp;Clear filters</a>
                     @endif
-                    <h6 class="mt-2 underline-heading">Categories</h6>
+                    <h6 class="mt-2 underline-heading">Jenjang</h6>
                     <ul class="ul-no-padding">
                         @foreach ($categories as $category)
                         <li> 
@@ -78,6 +78,23 @@
                                 @endif
                                  >
                                 <label class="custom-control-label" for="{{ 'cat-'.$category->id }}">{{ $category->name }}</label>
+                            </div>
+                        </li>
+                        @endforeach
+                    </ul>
+
+                    <h6 class="mt-3 underline-heading">Kelas</h6>
+                    
+                    <ul class="ul-no-padding">
+                        @foreach ($instruction_levels as $instruction_level)
+                        <li> 
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input filter-results" id="{{ 'ins-level-'.$instruction_level->id }}" name="instruction_level_id[]" value="{{ $instruction_level->id }}"
+                                @if(isset($_GET['instruction_level_id']))
+                                    {{ in_array($instruction_level->id, $_GET['instruction_level_id']) ? 'checked' : '' }}
+                                @endif
+                                >
+                                <label class="custom-control-label" for="{{ 'ins-level-'.$instruction_level->id }}">{{ $instruction_level->level }}</label>
                             </div>
                         </li>
                         @endforeach
@@ -114,7 +131,7 @@
                                     <div class="instructor-clist">
                                         <div class="col-md-12">
                                             <i class="fa fa-chalkboard-teacher"></i>&nbsp;
-                                            <span>Created by <b>{{ $course->first_name.' '.$course->last_name }}</b></span>
+                                            <span>Diajar oleh <b>{{ $course->first_name.' '.$course->last_name }}</b></span>
                                         </div>
                                     </div>
                                 </main>

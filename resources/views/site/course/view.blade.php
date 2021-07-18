@@ -32,7 +32,7 @@
                     <div class="instructor-clist m-0">
                         <div class="col-md-12 p-0 m-0">
                             <i class="fa fa-chalkboard-teacher"></i>&nbsp;
-                            <span>Created by <b>{{ $course->instructor->first_name.' '.$course->instructor->last_name }}</b></span>
+                            <span>Diajar oleh <b>{{ $course->instructor->first_name.' '.$course->instructor->last_name }}</b></span>
                         </div>
                     </div>
                     <div class="row cv-header">
@@ -42,30 +42,24 @@
                                 <i class="far fa-bookmark"></i>
                             </div>
                             <div class="cv-category-detail">
-                                <span>Category</span>
+                                <span>Jenjang</span>
                                 <br>
                                 {{ $course->category->name }}
                             </div>
                         </div>
 
-                        <!-- <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6  col-6">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6  col-6">
                             <div class="cv-category-detail cv-rating float-lg-left float-md-right float-sm-right">
-                                <span>{{ $course->ratings->count('rating') }} Reviews</span>
-                                <br>
-                                <star class="course-rating">
-                                    @for($r=1;$r<=5;$r++)
-                                        <span class="fa fa-star {{ $r <= $course->ratings->avg('rating') ? 'checked-vpage' : ''}}"></span>
-                                    @endfor
-                                </star>
+                                <p></p>
                             </div>
-                        </div> -->
+                        </div>
 
-                        <!-- <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                             <div class="cv-category-detail cv-price">
-                            	@php $course_price = $course->price ? $course->price : '0.00'; @endphp
-                                <h4>{{  config('config.default_currency').$course_price }}</h4>
+                            	<p></p>
                             </div>
-                        </div> -->
+                        </div>
+
                         <div class="col-xl-3 col-lg-3 col-md-6 float-md-right col-sm-6 float-sm-right col-6">
                             <div class="cv-category-detail cv-enroll float-lg-right float-md-right float-sm-right">
                                 <a href="{{ route('course.checkout', $course->course_slug) }}" class="btn btn-ulearn-cview mt-1">ENROLL COURSE</a>
@@ -210,11 +204,10 @@
                     </div> -->
 
                     <ul class="list-unstyled cf-pricing-li">
-                        <li><i class="far fa-user"></i>199 Students</li>
-                        <li><i class="far fa-clock"></i>Duration: {{ $course->duration ? $course->duration : '-' }}</li>
+                        <!-- <li><i class="far fa-user"></i>199 Students</li>
+                        <li><i class="far fa-clock"></i>Duration: {{ $course->duration ? $course->duration : '-' }}</li> -->
                         <li><i class="fas fa-bullhorn"></i>Lectures: {{ $lectures_count }}</li>
                         <li><i class="far fa-play-circle"></i>Videos: {{ $videos_count }}</li>
-                        <li><i class="far fa-address-card"></i>Certificate of Completion</li>
                         <li><i class="fas fa-file-download"></i>Downloadable Resources</li>
                     </ul>
                 </section>

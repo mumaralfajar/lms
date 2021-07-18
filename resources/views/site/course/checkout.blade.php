@@ -40,13 +40,13 @@
                             <div class="instructor-clist mb-0 mt-1 d-sm-block d-none">
                                 <div class="ml-1">
                                     <i class="far fa-bookmark"></i>&nbsp;&nbsp;
-                                    <span>Category <b>{{ $course->category->name }}</b></span>
+                                    <span>Jenjang <b>{{ $course->category->name }}</b></span>
                                 </div>
                             </div>
                             <div class="instructor-clist mb-0 mt-1">
                                 <div>
                                     <i class="fa fa-chalkboard-teacher"></i>&nbsp;
-                                    <span>Created by <b>{{ $course->instructor->first_name.' '.$course->instructor->last_name }}</b></span>
+                                    <span>Diajar oleh <b>{{ $course->instructor->first_name.' '.$course->instructor->last_name }}</b></span>
                                 </div>
                             </div>
                             
@@ -62,13 +62,13 @@
                     <input type="hidden" name="payment_method" value="paypal_express_checkout">
                     <input type="hidden" name="course_title" value="{{ $course->course_title }}">
 
-                    <div class="form-group mt-4">
+                    <div class="form-group col-4 mt-4">
                         <button type="submit" class="btn btn-lg btn-block social-btn facebook-btn">
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-5">
                                     <i class="@if($course->price == 0.00) fas @else fab fa-paypal  @endif float-right"></i>
                                 </div>
-                                <div class="col-14">
+                                <div class="col-11">
                                     <span>
                                     @if($course->price == 0.00)
                                     Confirm

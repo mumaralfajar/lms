@@ -1,8 +1,8 @@
 |    Role       |        Email ID        |   Password    |
 | ------------- | ---------------------  | ------------- |
-|    Admin      | admin@lms.com          |    secret     |
-|    Instructor | instructor@ulearn.com  |    secret     |
-|    Student    | student@ulearn.com     |    secret     |
+|    Admin      | admin@admin.com        |    admin123   |
+|    Instructor | instructor@lms.com     |    secret     |
+|    Student    | student@lms.com        |    secret     |
 
 ## Installation
 In the root folder, find the .env file and change the following values
