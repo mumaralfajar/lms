@@ -78,6 +78,12 @@ class CourseController extends Controller
         return $this->return_output('flash', 'success', 'Your rating have been deleted successfully', 'back', '200');
     }
 
+    public function instructorCourseDelete($course_id)
+    {
+        Course::destroy($course_id);
+        return $this->return_output('flash', 'success', 'Course deleted successfully', 'instructor-course-list', '200');
+    }
+
     public function courseView($course_slug = '', Request $request)
     {
         $course_breadcrumb = Session::get('course_breadcrumb');

@@ -89,6 +89,7 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('instructor-course-info', 'CourseController@instructorCourseInfo')->name('instructor.course.info');
         Route::get('instructor-course-info/{course_id}', 'CourseController@instructorCourseInfo')->name('instructor.course.info.edit');
         Route::post('instructor-course-info-save', 'CourseController@instructorCourseInfoSave')->name('instructor.course.info.save');
+        Route::get('instructor-course-delete/{course_id}', 'CourseController@instructorCourseDelete');
 
         Route::get('instructor-course-image', 'CourseController@instructorCourseImage')->name('instructor.course.image');
         Route::get('instructor-course-image/{course_id}', 'CourseController@instructorCourseImage')->name('instructor.course.image.edit');
