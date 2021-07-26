@@ -42,9 +42,9 @@
                                         <input type="checkbox" class="custom-control-input" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
                                         <label class="custom-control-label" for="remember">Remember me</label>
                                     </div>
-                                    <div class="col-6">
+                                    <!-- <div class="col-6">
                                         <a href="{{ route('password.request') }}" class="float-right forgot-text">Forgot password?</a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="form-group">

@@ -73,7 +73,7 @@
 
                 <!-- blog sidebar start -->
                 <div class="col-xl-3 col-lg-3 col-md-4 d-none d-md-block">
-                    <section class="course-feature">
+                    <!-- <section class="course-feature">
                         <h6 class="text-center mt-3">SUBSCRIBE TO ULEARN BLOG</h6>
 
                         <div class="pl-3 pr-2">
@@ -83,7 +83,7 @@
 
                             <a href="#" class="btn btn-ulearn-cview mt-3">Subscribe</a>
                         </div>
-                    </section>
+                    </section> -->
                     
                     <h6 class="mt-4 underline-heading">BLOG ARCHIVES</h6>
                     <ul class="ul-no-padding">

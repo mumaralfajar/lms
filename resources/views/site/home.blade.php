@@ -33,7 +33,7 @@
         <!-- dummy block end -->
 
         <!-- instructor block start -->
-        <article class="instructor-block">
+        <!-- <article class="instructor-block">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center seperator-head mt-3">
@@ -60,7 +60,7 @@
                 @endforeach
                 </div>
             </div>
-        </article>
+        </article> -->
         <!-- instructor block end -->
 
     </div>

@@ -33,7 +33,7 @@
                     <div class="instructor-clist m-0">
                         <div class="col-md-12 p-0 m-0">
                             <i class="fa fa-chalkboard-teacher"></i>&nbsp;
-                            <span>Created by <b>{{ $course->instructor->first_name.' '.$course->instructor->last_name }}</b></span>
+                            <span>Diajar oleh <b>{{ $course->instructor->first_name.' '.$course->instructor->last_name }}</b></span>
                         </div>
                     </div>
                     <div class="row cv-header">
@@ -43,7 +43,7 @@
                                 <i class="far fa-bookmark"></i>
                             </div>
                             <div class="cv-category-detail">
-                                <span>Category</span>
+                                <span>Jenjang</span>
                                 <br>
                                 {{ $course->category->name }}
                             </div>
@@ -172,7 +172,7 @@
             <div class="col-xl-3 col-lg-3 col-md-4 d-none d-md-block">
                 <section class="course-feature">
                     <header>
-                        <h6>COURSE FEATURES</h6>
+                        <h6>COURSE INFO</h6>
                     </header>
 
                     <!-- <div class="cf-pricing">
@@ -210,7 +210,7 @@
                 </section>
                 @endif
                 
-                <h6 class="mt-4 underline-heading">COURSE CATEGORIES</h6>
+                <!-- <h6 class="mt-4 underline-heading">COURSE CATEGORIES</h6>
                 <ul class="ul-no-padding">
                 	@php $categories = SiteHelpers::active_categories(); @endphp
                     @foreach ($categories as $category)
@@ -218,7 +218,7 @@
 			                {{ $category->name}}
 			            </li>
 			        @endforeach
-                </ul>
+                </ul> -->
 
                 @if($course->keywords)
                 <section class="tags-container mt-3">

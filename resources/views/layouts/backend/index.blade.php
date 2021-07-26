@@ -60,10 +60,10 @@
         data-toggle="collapse">
         <i class="icon wb-more-horizontal" aria-hidden="true"></i>
       </button>
-      <div class="navbar-brand navbar-brand-center">
-        <img class="navbar-brand-logo" src="{{ asset('backend/assets/images/b_logo.png') }}" title="ULEARN">
+      <!-- <div class="navbar-brand navbar-brand-center">
+        <img class="navbar-brand-logo" src="{{ asset('backend/assets/images/b_logo.png') }}">
         <span class="navbar-brand-text hidden-xs-down"> LMS</span>
-      </div>
+      </div> -->
       <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-search"
         data-toggle="collapse">
         <span class="sr-only">Toggle Search</span>

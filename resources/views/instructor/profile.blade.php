@@ -122,7 +122,7 @@ figure figcaption {
         </div>
 
         <div class="form-group col-md-4">
-            <label class="form-control-label">Paypal ID <span class="required">*</span></label>
+            <label class="form-control-label">Contact Email <span class="required">*</span></label>
             <input type="text" class="form-control" name="paypal_id" 
                 placeholder="Paypal ID" value="{{ $instructor->paypal_id }}" />
                 @if ($errors->has('paypal_id'))

@@ -30,7 +30,7 @@
             </div>
             <div class="col-md-3 col-lg-6 col-xl-6 d-none d-md-block">
                 <div class="dropdown float-left" >
-                  <span id="dropdownMenuButton" data-toggle="dropdown">Categories &nbsp;<i class="fa fa-caret-down"></i></span>
+                  <span id="dropdownMenuButton" data-toggle="dropdown">Jenjang &nbsp;<i class="fa fa-caret-down"></i></span>
                     <?php 
                         $categories = SiteHelpers::active_categories();
                     ?>

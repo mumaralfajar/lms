@@ -151,7 +151,7 @@
                     @endif
                     @if(count($course->ratings)>0)
                     <!-- reviews block start -->
-                    <section class="mt-5">
+                    <!-- <section class="mt-5">
                         <h4 class="mb-3">Reviews</h4>
 
                         <div class="reviews-container">
@@ -184,7 +184,7 @@
                             </div>
                             @endforeach
                         </div>
-                    </section>
+                    </section> -->
                     <!-- reviews block end -->
                     @endif
                 </div>
