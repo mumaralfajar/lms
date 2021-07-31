@@ -28,13 +28,13 @@
                <div class="col-12 not-found-col">
                     @if($status == "success")
                         <span><i class="fas fa-thumbs-up"></i></span>
-                        <h6 class="my-3">Your confirmation is successfull  
+                        <h6 class="my-3">Kelas Berhasil Diambil  
                             <!-- @if($transId !=0){{ ' and your confirmation id is '.$transId }} @endif -->
                         </h6>
                         <a href="{{ route('course.learn', $course->course_slug) }}" class="btn btn-ulearn-cview mt-3">Go to course learn page</a>
                     @else
                         <span><i class="fas fa-thumbs-down"></i></span>
-                        <h6 class="my-3">Sorry! Your confirmation was failed...</h6>
+                        <h6 class="my-3">Kunci Enrollment salah</h6>
                         <a href="{{ route('course.view', $course->course_slug) }}" class="btn btn-ulearn-cview mt-3">Return to course</a>
                     @endif
                </div>

@@ -8,6 +8,7 @@ use App\Models\Credit;
 use App\Models\Config;
 use App\Models\CourseTaken;
 use App\Models\Instructor;
+use DB;
 
 
 class PaymentController extends Controller {
@@ -16,6 +17,7 @@ class PaymentController extends Controller {
 	{
 		
 	}
+
 	
 	function getSuccess()
 	{
@@ -32,7 +34,7 @@ class PaymentController extends Controller {
 		$gateway->setPassword($express_checkout['password']);
 		$gateway->setSignature($express_checkout['signature']);
 		$gateway->setTestMode($express_checkout['test_mode']);
-
+	
 		
 		$response = $gateway->completePurchase([
 		'amount'    => floatval($transaction->amount),
@@ -50,7 +52,9 @@ class PaymentController extends Controller {
 			);
 		}
 
+
 		$course_id = \Session::get('course_id');
+
 		$course = Course::find($course_id);
 
 		if(isset($response_data['ACK'])){
@@ -101,6 +105,14 @@ class PaymentController extends Controller {
 		$payment_method = $request->input('payment_method');
 		$course_title = $request->input('course_title');
 		$course_id = $request->input('course_id');
+
+
+		$enrollmentKey = $request->input('enrollment-key');
+
+		$pass = DB::table('courses')->where('id',$course_id)->pluck('enrollKey');
+
+		$key = $pass[0];
+
 		$gateway = \Omnipay::gateway('paypal');
 
 			$paypal = Config::get_options('settingPayment');
@@ -133,8 +145,12 @@ class PaymentController extends Controller {
 			\Session::put('course_id', $course_id);
 			\Session::save();
 			
-			if($amount==0){
+
+
+			if($amount==0 && $enrollmentKey == $key){
 				return Redirect::to('payment/success');
+			}else{
+				return Redirect::to('payment/failure');
 			}
 
 			$response = $gateway->purchase([

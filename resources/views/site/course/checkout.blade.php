@@ -62,8 +62,17 @@
                     <input type="hidden" name="payment_method" value="paypal_express_checkout">
                     <input type="hidden" name="course_title" value="{{ $course->course_title }}">
 
-                    <div class="form-group col-4 mt-4">
-                        <button type="submit" class="btn btn-lg btn-block social-btn facebook-btn">
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col">
+                                Enrolment Key
+                            </div>
+                            <div class="col">
+                                <input type="text" name="enrollment-key">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-block social-btn facebook-btn col-3">
                             <div class="row">
                                 <div class="col-5">
                                     <i class="@if($course->price == 0.00) fas @else fab fa-paypal  @endif float-right"></i>
