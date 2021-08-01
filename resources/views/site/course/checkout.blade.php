@@ -66,7 +66,7 @@
                     <div class="form-group">
                         <div class="row">
                             <div class="col">
-                                Enrolment Key
+                                Enrollment Key
                             </div>
                             <div class="col">
                                 <input type="text" name="enrollment-key">

@@ -469,10 +469,13 @@ class CourseController extends Controller
     {
         $course_id = $request->input('course_id');
         // echo '<pre>';print_r($_POST);exit;
+        $enrollkey = $request->input('enrollment-key');
+
         $validation_rules = [
             'course_title' => 'required|string|max:50',
             'category_id' => 'required',
             'instruction_level_id' => 'required',
+            'enrollment-key' => 'required',
         ];
 
         $validator = Validator::make($request->all(),$validation_rules);
@@ -514,6 +517,10 @@ class CourseController extends Controller
         $course->save();
 
         $course_id = $course->id;
+
+        DB::table('courses')->where('id',$course_id)->update(['enrollKey' => $enrollkey]);
+
+        // return $enrollkey;
 
         return $this->return_output('flash', 'success', $success_message, 'instructor-course-info/'.$course_id, '200');
     }

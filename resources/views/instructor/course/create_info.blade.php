@@ -26,7 +26,7 @@
         <div class="form-group col-md-4">
             <label class="form-control-label">Nama Mata Pelajaran<span class="required">*</span></label>
             <input type="text" class="form-control" name="course_title" 
-                placeholder="Course Title" value="{{ $course->course_title }}" />
+                placeholder="Nama mata pelajaran" value="{{ $course->course_title }}" />
                 @if ($errors->has('course_title'))
                     <label class="error" for="course_title">{{ $errors->first('course_title') }}</label>
                 @endif
@@ -65,6 +65,19 @@
                 <label class="error" for="instruction_level_id">{{ $errors->first('instruction_level_id') }}</label>
             @endif
         </div>
+
+
+        <!-- resume ini -->
+        <div class="form-group col-md-4">
+            <label class="form-control-label">Enrollment Key</label>
+            <input type="text" class="form-control" name="enrollment-key" 
+                placeholder="Enrollment Key" />
+                @if ($errors->has('enrollment-key'))
+                    <label class="error" for="enrollment-key">{{ $errors->first('enrollment-key') }}</label>
+                @endif
+        </div>
+
+
 
         <!-- <div class="form-group col-md-4">
             <label class="form-control-label">Duration</label>
@@ -108,9 +121,9 @@
 
 
 
-        <div class="form-group col-md-12">
+        <div class="form-group col-md-4">
             <label class="form-control-label">Overview</label>
-            <textarea name="overview">
+            <textarea name="overview" class="form-group col-12" rows='10' style="resize:none">
                 {{ $course->overview }}
             </textarea>
         </div>
@@ -158,6 +171,9 @@
                 },
                 instruction_level_id: {
                     required: true
+                },
+                enrollment-key: {
+                    required: true
                 }
             },
             messages: {
@@ -169,6 +185,9 @@
                 },
                 instruction_level_id: {
                     required: 'The instruction level field is required.'
+                }
+                enrollment-key: {
+                    required: 'The enrollment key field is required.'
                 }
             }
         });
