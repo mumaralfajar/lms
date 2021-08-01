@@ -70,7 +70,14 @@
         <!-- resume ini -->
         <?php
             $pass = DB::table('courses')->where('id',$course->id)->pluck('enrollKey');
-            $ek = $pass[0];
+            
+            if ($pass->isEmpty())
+            {
+                $ek = "";
+            }
+            else{
+                $ek = $pass[0];
+            }
             
         ?>
 
@@ -129,9 +136,7 @@
 
         <div class="form-group col-md-4">
             <label class="form-control-label">Overview</label>
-            <textarea name="overview" class="form-group col-12" rows='10' style="resize:none">
-                {{ $course->overview }}
-            </textarea>
+            <textarea name="overview" class="form-group col-12" rows='10' style="resize:none">{{$course->overview}}</textarea>
         </div>
 
       </div>
