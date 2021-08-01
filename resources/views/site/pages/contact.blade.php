@@ -57,7 +57,7 @@
                 <div class="col-xl-6 col-lg-6 col-md-6 vertical-align d-none d-lg-block map-block">
                     {!! Sitehelpers::get_option('pageContact', 'map') !!}
                 </div>
-                <div class="col-xl-6 offset-xl-0 col-lg-6 offset-lg-0 col-md-8 offset-md-2">
+                <!-- <div class="col-xl-6 offset-xl-0 col-lg-6 offset-lg-0 col-md-8 offset-md-2">
                     <div class="rightRegisterForm">
                             <div class="box-header">
                                 Drop us a message
@@ -93,7 +93,7 @@
                             </form>
                             </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
 @endsection

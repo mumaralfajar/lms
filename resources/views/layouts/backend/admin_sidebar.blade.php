@@ -59,7 +59,7 @@
             </ul>
         </li>
 
-        <li class="site-menu-item has-sub {{ request()->is('admin/config/setting-*') ? 'active open' : '' }}">
+        <!-- <li class="site-menu-item has-sub {{ request()->is('admin/config/setting-*') ? 'active open' : '' }}">
             <a href="javascript:void(0)">
                 <i class="site-menu-icon fas fa-cogs" aria-hidden="true"></i>
                 <span class="site-menu-title">Settings</span>
@@ -71,18 +71,18 @@
                     <span class="site-menu-title">General</span>
                   </a>
                 </li>
-                <!-- <li class="site-menu-item {{ request()->is('admin/config/setting-payment') ? 'active' : '' }}">
+                <li class="site-menu-item {{ request()->is('admin/config/setting-payment') ? 'active' : '' }}">
                   <a href="{{ route('admin.settingPayment') }}">
                     <span class="site-menu-title">Payment</span>
                   </a>
-                </li> -->
-                <!-- <li class="site-menu-item {{ request()->is('admin/config/setting-email') ? 'active' : '' }}">
+                </li>
+                <li class="site-menu-item {{ request()->is('admin/config/setting-email') ? 'active' : '' }}">
                   <a href="{{ route('admin.settingEmail') }}">
                     <span class="site-menu-title">Email</span>
                   </a>
-                </li> -->
+                </li>
             </ul>
-        </li>
+        </li> -->
         
       </ul>
 

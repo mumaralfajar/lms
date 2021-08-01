@@ -121,14 +121,14 @@ figure figcaption {
                 @endif
         </div>
 
-        <div class="form-group col-md-4">
+        <!-- <div class="form-group col-md-4">
             <label class="form-control-label">Contact Email <span class="required">*</span></label>
             <input type="text" class="form-control" name="paypal_id" 
                 placeholder="Paypal ID" value="{{ $instructor->paypal_id }}" />
                 @if ($errors->has('paypal_id'))
                     <label class="error" for="paypal_id">{{ $errors->first('paypal_id') }}</label>
                 @endif
-        </div>
+        </div> -->
 
         <!-- <div class="form-group col-md-6">
             <label class="form-control-label">Facebook Link </label>
@@ -171,7 +171,7 @@ figure figcaption {
         <div class="row">
         	
     		<div class="form-group col-md-4">
-	            <label class="form-control-label">Course Image</label>
+	            <label class="form-control-label">Instructor Image</label>
 	            
 	            <label class="cabinet center-block">
 	                <figure class="course-image-container">

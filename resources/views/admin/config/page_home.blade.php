@@ -28,11 +28,11 @@
                 placeholder="Banner Text" value="{{ isset($config['banner_text']) ? $config['banner_text'] : '' }}" />
             </div>
         
-            <div class="form-group col-md-6">
+            <!-- <div class="form-group col-md-6">
               <label class="form-control-label">Instructor Text</label>
               <input type="text" class="form-control" name="instructor_text" 
                 placeholder="Instructor Text" value="{{ isset($config['instructor_text']) ? $config['instructor_text'] : '' }}" />
-            </div>
+            </div> -->
         
 
             <div class="form-group col-md-6">

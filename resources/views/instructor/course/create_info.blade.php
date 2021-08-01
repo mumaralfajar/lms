@@ -136,7 +136,7 @@
 
         <div class="form-group col-md-4">
             <label class="form-control-label">Overview</label>
-            <textarea name="overview" class="form-group col-12" rows='10' style="resize:none">{{$course->overview}}</textarea>
+            <textarea name="overview" class="form-control col-12" rows='10' style="resize:none">{{$course->overview}}</textarea>
         </div>
 
       </div>

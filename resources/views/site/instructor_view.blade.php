@@ -62,7 +62,7 @@
                         </main>
                     </div>
 
-                    <div class="rightRegisterForm ml-0">
+                    <!-- <div class="rightRegisterForm ml-0">
                         <div class="box-header">
                             Drop a Message
                         </div>
@@ -92,7 +92,7 @@
                             </form>
 
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-xl-9 col-lg-8 col-md-7">
                     <h4>{{ $instructor->first_name.' '.$instructor->last_name }}</h4>
@@ -111,14 +111,14 @@
                         </div>
                     </div>
 
-                    <h4 class="mt-4">Biography</h4>
+                    <h4 class="mt-4">Biografi</h4>
                     {!! $instructor->biography !!}
                     <hr class="mt-4">
                     @if(count($instructor->courses) > 0)
                     <div class="row">
                         <div class="col-12 text-center seperator-head mt-0">
                             <h4>Courses</h4>
-                            <p class="mt-3">Courses taught by {{ $instructor->first_name.' '.$instructor->last_name }}</p>
+                            <p class="mt-3">Kelas yang diajar oleh {{ $instructor->first_name.' '.$instructor->last_name }}</p>
                         </div>
                     </div>
 
@@ -135,7 +135,7 @@
                                     <div class="instructor-clist">
                                         <div class="col-md-12">
                                             <i class="fa fa-chalkboard-teacher"></i>&nbsp;
-                                            <span>Created by <b>{{ $course->first_name.' '.$course->last_name }}</b></span>
+                                            <span>diajar oleh <b>{{ $instructor->first_name.' '.$instructor->last_name }}</b></span>
                                         </div>
                                     </div>
                                 </main>

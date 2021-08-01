@@ -118,8 +118,8 @@
                     <li class="mb-1"><b>Resources</b></li>
                     <li><a href="{{ route('page.about') }}">About Us</a></li>
                     <li><a href="{{ route('page.contact') }}">Contact Us</a></li>
-                    <li><a href="{{ route('register') }}">Register Page</a></li>
-                    <li><a href="{{ route('login') }}">Login Page</a></li>
+                    <!-- <li><a href="{{ route('register') }}">Register Page</a></li> -->
+                    <!-- <li><a href="{{ route('login') }}">Login Page</a></li> -->
                 </ul>
             </div>
             <div class="col-lg-2 col-md-4 col-sm-4 mt-3 d-none d-sm-block">

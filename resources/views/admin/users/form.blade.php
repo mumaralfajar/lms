@@ -61,12 +61,12 @@
       <div class="form-group col-md-4">
           <label class="form-control-label">Role</label>
           <div>
-              <div class="checkbox-custom checkbox-default checkbox-inline">
-                <input type="checkbox" id="inputCheckboxStudent" name="roles[]" value="student" @if($user->id && $user->hasRole('student')) checked @endif>
+              <div class="radio-custom radio-default radio-inline">
+                <input type="radio" id="inputCheckboxStudent" name="roles[]" value="student" @if($user->id && $user->hasRole('student')) checked @endif>
                 <label for="inputCheckboxStudent">Student</label>
               </div>
-              <div class="checkbox-custom checkbox-default checkbox-inline">
-                <input type="checkbox" id="inputCheckboxInstructor" name="roles[]" value="instructor" @if($user->id &&  $user->hasRole('instructor')) checked @endif>
+              <div class="radio-custom radio-default radio-inline">
+                <input type="radio" id="inputCheckboxInstructor" name="roles[]" value="instructor" @if($user->id &&  $user->hasRole('instructor')) checked @endif>
                 <label for="inputCheckboxInstructor">Instructor</label>
               </div>
               <div id="role-div-error">

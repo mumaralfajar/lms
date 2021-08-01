@@ -109,13 +109,13 @@
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-8">
                             <span >Showing {{ $courses->currentPage() }} of {{ $courses->lastPage() }} page(s)</span>
                         </div>
-                        <div class="col-xl-2 offset-xl-4 col-lg-2 offset-lg-4 col-md-3 offset-md-3 col-sm-3 offset-sm-3 col-4">
+                        <!-- <div class="col-xl-2 offset-xl-4 col-lg-2 offset-lg-4 col-md-3 offset-md-3 col-sm-3 offset-sm-3 col-4">
                             <select class="form-control form-control-sm sort-by">
                                 <option value="">Sort By</option>
                                 <option<?php echo(!empty($_GET['sort_price']) && $_GET['sort_price']=='asc')?' selected="selected"':'';?> value="sort_price=asc">Price (Low to High)</option>
                                 <option<?php echo(!empty($_GET['sort_price']) && $_GET['sort_price']=='desc')?' selected="selected"':'';?>  value="sort_price=desc">Price (High to Low)</option>
                             </select>
-                        </div>
+                        </div> -->
                     </div>
                     
                     <!-- course start -->
