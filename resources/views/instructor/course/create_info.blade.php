@@ -68,10 +68,16 @@
 
 
         <!-- resume ini -->
+        <?php
+            $pass = DB::table('courses')->where('id',$course->id)->pluck('enrollKey');
+            $ek = $pass[0];
+            
+        ?>
+
         <div class="form-group col-md-4">
             <label class="form-control-label">Enrollment Key</label>
             <input type="text" class="form-control" name="enrollment-key" 
-                placeholder="Enrollment Key" />
+                placeholder="Enrollment Key" value="<?php echo($ek) ?>" >
                 @if ($errors->has('enrollment-key'))
                     <label class="error" for="enrollment-key">{{ $errors->first('enrollment-key') }}</label>
                 @endif
